@@ -1,4 +1,4 @@
-#Dermstore Coding Challenge
+# Dermstore Coding Challenge
 ### Installation
 To install:
 * Clone repo

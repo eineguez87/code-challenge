@@ -1,6 +1,6 @@
 # Dermstore Coding Challenge
 ### Background
-This project uses Lumen, a lightweight framework. Based on Laravel. Also uses MySQL as the database and jQuery with bootstrap on the front end.
+This project uses Lumen, a lightweight framework. Based on Laravel. Also uses MySQL as the database and jQuery with bootstrap on the front end. It prevents SQL injection, sensitive data exposure, logs all login attempts, and attempts to prevent log in after 5 failed attempts for 5 hours. 
 ### Installation
 To install:
 * Clone repo

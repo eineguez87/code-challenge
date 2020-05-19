@@ -34,8 +34,6 @@ class User extends Model implements AuthenticatableContract, AuthorizableContrac
     {
         $password = password_hash($user['password'], PASSWORD_BCRYPT);
         
-        
-        
         $user = app('db')->select("INSERT INTO customers (username, password) VALUES (:username, :password)",
             ['username'=>$user['username'], 'password'=>$password]);
         return $user;

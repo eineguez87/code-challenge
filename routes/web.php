@@ -15,21 +15,6 @@ use Illuminate\Http\JsonResponse;
 |
 */
 
-$router->get('/', function ()  {
-    return view('login');
-});
-
-
-$router->get('/test', function () use ($router) {
-    $results = app('db')->select("SELECT * FROM customers");
-    
-    return response()->json($results);
-});
-
-
-
-
 $router->group(['prefix' => '/user'], function () use ($router) {
     $router->post('login', ['uses' => 'UserController@authenticate']);
-    $router->post('create', ['uses' => 'UserController@create']);
 });

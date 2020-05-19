@@ -15,6 +15,10 @@ use Illuminate\Http\JsonResponse;
 |
 */
 
+$router->get('/', function ()  {
+    return view('login');
+});
+
 $router->group(['prefix' => '/user'], function () use ($router) {
     $router->post('login', ['uses' => 'UserController@authenticate']);
 });
